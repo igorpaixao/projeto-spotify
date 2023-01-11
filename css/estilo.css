@@ -1,0 +1,253 @@
+html, body, #home {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: url("../imagens/capa.png"),
+                url("../imagens/ruido.png"),
+                linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*
+*************** NAVEGACAO **************
+*/
+
+nav.navbar-transparente {
+    padding: 15px 0;
+   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #9bf0e1;
+}
+
+.navbar .navbar-toggler {
+    color: rgba(255, 255, 255);
+    border-color: rgba(255, 255, 255);
+}
+
+.divisor {
+    width: 1px;
+    background-color: white;
+    margin: 12px 15px;
+}
+
+/*
+************ HOME ************
+*/
+
+#home .container .capa {
+    text-align: center;
+}
+
+#home .capa h1 {
+    font-weight: bold;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.btn-custom {
+    border-radius: 500px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: background-color 0.4s, color 0.4s;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.btn-roxo {
+    background: #7c26f8;
+}
+
+.btn-roxo:hover {
+    background: #6207e3;
+    color: #fff;
+}
+
+/*
+************ SERVICOS ************
+*/
+
+#servicos {
+    background-color: white;
+    padding: 20px 0;
+}
+
+.albuns {
+    padding: 10px 0;
+}
+
+#servicos h2, h3 {
+    color: #7c26f8;
+}
+
+#servicos p {
+    color: black;
+}
+
+.rotacionar {
+    box-sizing: border-box;
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+/*
+************ RECURSOS ************
+*/
+
+#recursos {
+    padding: 20px 0;
+}
+
+#recursos h3 {
+    color: #9bf0e1;
+}
+
+#recursos h2, p {
+    color: white;
+}
+
+/*
+************ FOOTER ************
+*/
+
+footer {
+    background: #000;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+footer h4 {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #919496;
+}
+
+footer .navbar-nav a {
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+footer ul.footer-nav {
+    list-style: none;
+
+}
+
+footer ul.footer-nav li {
+    float: right;
+    margin: 0px 5px;
+}
+
+footer ul.footer-nav li a:hover {
+    opacity: 0.8;
+}
+
+footer ul.footer-nav li a:active {
+    opacity: 0.6;
+}
+
+/*
+************ TIPOGRAFIA ************
+*/
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+/*
+************ MEDIA QUERIES ************
+*/
+
+@media (max-width: 575.98px) {
+    #home .capa h1 {
+        font-size: 3em;
+    }
+    
+    .btn-custom {
+        margin: 10px 15px;
+        font-size: 1em;
+    }
+
+    .navbar-brand {
+        margin-left: 10px;
+    }
+
+    .navbar-toggler {
+        margin-right: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 10px;
+    }
+
+    footer h4 {
+        margin: 10px 0px 5px 0px;
+    }
+
+    footer ul.footer-nav li {
+        float: left;
+        margin: 20px 5px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #home .capa h1 {
+        font-size: 3em;
+    }
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+
+    footer h4 {
+        margin: 10px 0px 5px 0px;
+    }
+
+    footer ul.footer-nav li {
+        float: left;
+        margin: 20px 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #home .capa h1 {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #home .capa h1 {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    #home .capa h1 {
+        font-size: 6em;
+    }
+}
